@@ -1,0 +1,3 @@
+- Kategorien (kategorien): name[string/text], beschreibung[string/textarea]
+- Einträge (eintraege): kategorie[applookup/select], notizen[string/textarea], titel[string/text]
+  → kategorie links to app_id 6a0b0a20df34525506d5a99b

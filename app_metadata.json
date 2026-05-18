@@ -1,0 +1,102 @@
+{
+  "appgroup_id": "6a0b0a3b6567615f5344404f",
+  "appgroup_name": "Test",
+  "apps": {
+    "kategorien": {
+      "app_id": "6a0b0a20df34525506d5a99b",
+      "name": "Kategorien",
+      "main": false,
+      "controls": {
+        "name": {
+          "identifier": "name",
+          "label": "Kategoriename",
+          "type": "string",
+          "subtype": "text",
+          "fulltype": "string/text",
+          "description": "A string value not longer than 4000 characters (or `null`/`None`).",
+          "required": null,
+          "in_list": true,
+          "in_mobile_list": true,
+          "in_text": true,
+          "in_structured_search": false,
+          "in_fulltext_search": true,
+          "in_expert_search": true
+        },
+        "beschreibung": {
+          "identifier": "beschreibung",
+          "label": "Beschreibung",
+          "type": "string",
+          "subtype": "textarea",
+          "fulltype": "string/textarea",
+          "description": "A string value that can contain multiple lines of text (or `null`/`None`).",
+          "required": null,
+          "in_list": true,
+          "in_mobile_list": true,
+          "in_text": false,
+          "in_structured_search": false,
+          "in_fulltext_search": true,
+          "in_expert_search": true
+        }
+      }
+    },
+    "eintraege": {
+      "app_id": "6a0b0a2cab8cd0e3ed90fca8",
+      "name": "Einträge",
+      "main": false,
+      "controls": {
+        "kategorie": {
+          "identifier": "kategorie",
+          "label": "Kategorie",
+          "type": "applookup",
+          "subtype": "select",
+          "fulltype": "applookup/select",
+          "description": "A reference to a LivingApp record from the target lookup app 'Kategorien' with the id `6a0b0a20df34525506d5a99b` (or `null`/`None`).\n\nThe field value will be a valid record URL in the form `https://test.living-apps.de/rest/apps/6a0b0a20df34525506d5a99b/records/<record-id>` (or `null`/`None`).\n\nDisplayed as single-select field in HTML pages.",
+          "required": null,
+          "in_list": true,
+          "in_mobile_list": true,
+          "in_text": true,
+          "in_structured_search": false,
+          "in_fulltext_search": true,
+          "in_expert_search": true,
+          "lookup_app": "https://test.living-apps.de/rest/apps/6a0b0a20df34525506d5a99b"
+        },
+        "notizen": {
+          "identifier": "notizen",
+          "label": "Notizen",
+          "type": "string",
+          "subtype": "textarea",
+          "fulltype": "string/textarea",
+          "description": "A string value that can contain multiple lines of text (or `null`/`None`).",
+          "required": null,
+          "in_list": true,
+          "in_mobile_list": false,
+          "in_text": false,
+          "in_structured_search": false,
+          "in_fulltext_search": true,
+          "in_expert_search": true
+        },
+        "titel": {
+          "identifier": "titel",
+          "label": "Titel",
+          "type": "string",
+          "subtype": "text",
+          "fulltype": "string/text",
+          "description": "A string value not longer than 4000 characters (or `null`/`None`).",
+          "required": null,
+          "in_list": true,
+          "in_mobile_list": true,
+          "in_text": true,
+          "in_structured_search": false,
+          "in_fulltext_search": true,
+          "in_expert_search": true
+        }
+      }
+    }
+  },
+  "metadata": {
+    "apps_list": [
+      "Kategorien",
+      "Einträge"
+    ]
+  }
+}
